@@ -1,0 +1,2251 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.DatagraphCoreV1.true...DatagraphCoreV1 />
+    <_.fcp.DatagraphNodeDashboardZoneVisibilityV1.true...DatagraphNodeDashboardZoneVisibilityV1 />
+    <_.fcp.DatagraphNodeSingleValueFieldV1.true...DatagraphNodeSingleValueFieldV1 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <ParameterAction />
+    <_.fcp.ParameterActionClearSelection.true...ParameterActionClearSelection />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneVisibilityControl />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='pSelectedPlayer' datatype='string' datatype-customized='true' name='[Parameter 1]' param-domain-type='any' role='measure' type='nominal' value='&quot;Brandon Smith&quot;'>
+        <calculation class='tableau' formula='&quot;Brandon Smith&quot;' />
+      </column>
+      <column caption='pSelectedGameID' datatype='integer' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='21'>
+        <calculation class='tableau' formula='21' />
+      </column>
+      <column caption='pShowPlayerDetail' datatype='boolean' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='false'>
+        <calculation class='tableau' formula='false' />
+        <members>
+          <member value='true' />
+          <member value='false' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='Player Positions+ (Copy of RLWC 2021)' inline='true' name='federated.03xtlm50w1pjcm15jw5bb0uxv717' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Copy of RLWC 2021' name='cloudfile:googledrive-excel-direct.1wf5xuk0gubfnp1bxyn580cnieza'>
+            <connection class='cloudfile:googledrive-excel-direct' cleaning='no' cloudFileExtension='xlsx' cloudFileId='1EuHta1urdKBOFj2YS05fsCzE0R61jHjQlQ1c3-rucWM' cloudFileMetadata_-_folder='root' cloudFileName='Copy of RLWC 2021.xlsx' cloudFileProvider='googledrive' cloudFileRequestURL='https://www.googleapis.com/drive/v3/files/1EuHta1urdKBOFj2YS05fsCzE0R61jHjQlQ1c3-rucWM/export?mimeType=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' compat='no' dataRefreshTime='' filename='Copy of RLWC 2021.xlsx' interpretationMode='0' server='' server-oauth='' username='kushal.ismael@gmail.com' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='cloudfile:googledrive-excel-direct.1wf5xuk0gubfnp1bxyn580cnieza' name='Player Positions' table='[&apos;Player Positions$&apos;]' type='table'>
+          <columns gridOrigin='A1:K1657:no:A1:K1657:0' header='yes' outcome='6'>
+            <column datatype='string' name='Field1' ordinal='0' />
+            <column datatype='integer' name='Game ID' ordinal='1' />
+            <column datatype='string' name='Team' ordinal='2' />
+            <column datatype='integer' name='Player Number' ordinal='3' />
+            <column datatype='integer' name='Shirt Number' ordinal='4' />
+            <column datatype='string' name='Position' ordinal='5' />
+            <column datatype='integer' name='Position Number' ordinal='6' />
+            <column datatype='string' name='Player Image' ordinal='7' />
+            <column datatype='string' name='Player Name' ordinal='8' />
+            <column datatype='string' name='Comp' ordinal='9' />
+            <column datatype='datetime' name='Game Date' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='cloudfile:googledrive-excel-direct.1wf5xuk0gubfnp1bxyn580cnieza' name='Player Positions' table='[&apos;Player Positions$&apos;]' type='table'>
+            <columns gridOrigin='A1:K1657:no:A1:K1657:0' header='yes' outcome='6'>
+              <column datatype='string' name='Field1' ordinal='0' />
+              <column datatype='integer' name='Game ID' ordinal='1' />
+              <column datatype='string' name='Team' ordinal='2' />
+              <column datatype='integer' name='Player Number' ordinal='3' />
+              <column datatype='integer' name='Shirt Number' ordinal='4' />
+              <column datatype='string' name='Position' ordinal='5' />
+              <column datatype='integer' name='Position Number' ordinal='6' />
+              <column datatype='string' name='Player Image' ordinal='7' />
+              <column datatype='string' name='Player Name' ordinal='8' />
+              <column datatype='string' name='Comp' ordinal='9' />
+              <column datatype='datetime' name='Game Date' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='cloudfile:googledrive-excel-direct.1wf5xuk0gubfnp1bxyn580cnieza' name='Player Stats' table='[&apos;Player Stats$&apos;]' type='table'>
+            <columns gridOrigin='A1:BF1956:no:A1:BF1956:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Game ID' ordinal='0' />
+              <column datatype='string' name='Name' ordinal='1' />
+              <column datatype='integer' name='Player Numbers' ordinal='2' />
+              <column datatype='string' name='Team' ordinal='3' />
+              <column datatype='string' name='Team Name' ordinal='4' />
+              <column datatype='integer' name='Tries' ordinal='5' />
+              <column datatype='integer' name='Tackles' ordinal='6' />
+              <column datatype='integer' name='Errors' ordinal='7' />
+              <column datatype='integer' name='Penalties' ordinal='8' />
+              <column datatype='string' name='Score (FT)' ordinal='9' />
+              <column datatype='datetime' name='Game Date' ordinal='10' />
+              <column datatype='string' name='Round Number' ordinal='11' />
+              <column datatype='string' name='Home' ordinal='12' />
+              <column datatype='string' name='Away' ordinal='13' />
+              <column datatype='integer' name='All Goals' ordinal='14' />
+              <column datatype='integer' name='All Goals Missed' ordinal='15' />
+              <column datatype='integer' name='All Run Metres' ordinal='16' />
+              <column datatype='integer' name='Dummy Half Runs' ordinal='17' />
+              <column datatype='integer' name='Field Goals' ordinal='18' />
+              <column datatype='integer' name='Field Goals Attempts' ordinal='19' />
+              <column datatype='integer' name='Bomb Kicks' ordinal='20' />
+              <column datatype='integer' name='Forty Twenty Kicks' ordinal='21' />
+              <column datatype='integer' name='Points' ordinal='22' />
+              <column datatype='integer' name='Linebreak Assists' ordinal='23' />
+              <column datatype='integer' name='Linebreaks' ordinal='24' />
+              <column datatype='integer' name='Offloads' ordinal='25' />
+              <column datatype='integer' name='Offload To Hand' ordinal='26' />
+              <column datatype='integer' name='Passes' ordinal='27' />
+              <column datatype='integer' name='Post Contact Metres' ordinal='28' />
+              <column datatype='integer' name='Tackle Breaks' ordinal='29' />
+              <column datatype='integer' name='Try Involvement' ordinal='30' />
+              <column datatype='integer' name='Charge Downs' ordinal='31' />
+              <column datatype='integer' name='Kicks Defused' ordinal='32' />
+              <column datatype='integer' name='Intercepts' ordinal='33' />
+              <column datatype='integer' name='One On One Steal' ordinal='34' />
+              <column datatype='integer' name='Try Saves' ordinal='35' />
+              <column datatype='integer' name='Twenty Forty Kicks' ordinal='36' />
+              <column datatype='integer' name='Grubber Kick' ordinal='37' />
+              <column datatype='integer' name='Kicks' ordinal='38' />
+              <column datatype='integer' name='Kick Try Assist' ordinal='39' />
+              <column datatype='integer' name='Kick Dead' ordinal='40' />
+              <column datatype='integer' name='Ruck Infringements' ordinal='41' />
+              <column datatype='integer' name='One On One Lost' ordinal='42' />
+              <column datatype='integer' name='On Report' ordinal='43' />
+              <column datatype='integer' name='Sent Off' ordinal='44' />
+              <column datatype='integer' name='Sin Bins' ordinal='45' />
+              <column datatype='integer' name='Full Time H' ordinal='46' />
+              <column datatype='integer' name='Full Time A' ordinal='47' />
+              <column datatype='integer' name='Half T H' ordinal='48' />
+              <column datatype='integer' name='Half Time A' ordinal='49' />
+              <column datatype='string' name='Comp' ordinal='50' />
+              <column datatype='string' name='Date' ordinal='51' />
+              <column datatype='string' name='Referee' ordinal='52' />
+              <column datatype='integer' name='Passes Per Run' ordinal='53' />
+              <column datatype='integer' name='Try Assists' ordinal='54' />
+              <column datatype='integer' name='Missed Tackles' ordinal='55' />
+              <column datatype='string' name='TeamURL' ordinal='56' />
+              <column datatype='string' name='Win/Lose' ordinal='57' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[All Goals Missed]' value='[Player Stats].[All Goals Missed]' />
+          <map key='[All Goals]' value='[Player Stats].[All Goals]' />
+          <map key='[All Run Metres]' value='[Player Stats].[All Run Metres]' />
+          <map key='[Away]' value='[Player Stats].[Away]' />
+          <map key='[Bomb Kicks]' value='[Player Stats].[Bomb Kicks]' />
+          <map key='[Charge Downs]' value='[Player Stats].[Charge Downs]' />
+          <map key='[Comp (Player Stats)]' value='[Player Stats].[Comp]' />
+          <map key='[Comp]' value='[Player Positions].[Comp]' />
+          <map key='[Date]' value='[Player Stats].[Date]' />
+          <map key='[Dummy Half Runs]' value='[Player Stats].[Dummy Half Runs]' />
+          <map key='[Errors]' value='[Player Stats].[Errors]' />
+          <map key='[Field Goals Attempts]' value='[Player Stats].[Field Goals Attempts]' />
+          <map key='[Field Goals]' value='[Player Stats].[Field Goals]' />
+          <map key='[Field1]' value='[Player Positions].[Field1]' />
+          <map key='[Forty Twenty Kicks]' value='[Player Stats].[Forty Twenty Kicks]' />
+          <map key='[Full Time A]' value='[Player Stats].[Full Time A]' />
+          <map key='[Full Time H]' value='[Player Stats].[Full Time H]' />
+          <map key='[Game Date (Player Stats)]' value='[Player Stats].[Game Date]' />
+          <map key='[Game Date]' value='[Player Positions].[Game Date]' />
+          <map key='[Game ID (Player Stats)]' value='[Player Stats].[Game ID]' />
+          <map key='[Game ID]' value='[Player Positions].[Game ID]' />
+          <map key='[Grubber Kick]' value='[Player Stats].[Grubber Kick]' />
+          <map key='[Half T H]' value='[Player Stats].[Half T H]' />
+          <map key='[Half Time A]' value='[Player Stats].[Half Time A]' />
+          <map key='[Home]' value='[Player Stats].[Home]' />
+          <map key='[Intercepts]' value='[Player Stats].[Intercepts]' />
+          <map key='[Kick Dead]' value='[Player Stats].[Kick Dead]' />
+          <map key='[Kick Try Assist]' value='[Player Stats].[Kick Try Assist]' />
+          <map key='[Kicks Defused]' value='[Player Stats].[Kicks Defused]' />
+          <map key='[Kicks]' value='[Player Stats].[Kicks]' />
+          <map key='[Linebreak Assists]' value='[Player Stats].[Linebreak Assists]' />
+          <map key='[Linebreaks]' value='[Player Stats].[Linebreaks]' />
+          <map key='[Missed Tackles]' value='[Player Stats].[Missed Tackles]' />
+          <map key='[Name]' value='[Player Stats].[Name]' />
+          <map key='[Offload To Hand]' value='[Player Stats].[Offload To Hand]' />
+          <map key='[Offloads]' value='[Player Stats].[Offloads]' />
+          <map key='[On Report]' value='[Player Stats].[On Report]' />
+          <map key='[One On One Lost]' value='[Player Stats].[One On One Lost]' />
+          <map key='[One On One Steal]' value='[Player Stats].[One On One Steal]' />
+          <map key='[Passes Per Run]' value='[Player Stats].[Passes Per Run]' />
+          <map key='[Passes]' value='[Player Stats].[Passes]' />
+          <map key='[Penalties]' value='[Player Stats].[Penalties]' />
+          <map key='[Player Image]' value='[Player Positions].[Player Image]' />
+          <map key='[Player Name]' value='[Player Positions].[Player Name]' />
+          <map key='[Player Number]' value='[Player Positions].[Player Number]' />
+          <map key='[Player Numbers]' value='[Player Stats].[Player Numbers]' />
+          <map key='[Points]' value='[Player Stats].[Points]' />
+          <map key='[Position Number]' value='[Player Positions].[Position Number]' />
+          <map key='[Position]' value='[Player Positions].[Position]' />
+          <map key='[Post Contact Metres]' value='[Player Stats].[Post Contact Metres]' />
+          <map key='[Referee]' value='[Player Stats].[Referee]' />
+          <map key='[Round Number]' value='[Player Stats].[Round Number]' />
+          <map key='[Ruck Infringements]' value='[Player Stats].[Ruck Infringements]' />
+          <map key='[Score (FT)]' value='[Player Stats].[Score (FT)]' />
+          <map key='[Sent Off]' value='[Player Stats].[Sent Off]' />
+          <map key='[Shirt Number]' value='[Player Positions].[Shirt Number]' />
+          <map key='[Sin Bins]' value='[Player Stats].[Sin Bins]' />
+          <map key='[Tackle Breaks]' value='[Player Stats].[Tackle Breaks]' />
+          <map key='[Tackles]' value='[Player Stats].[Tackles]' />
+          <map key='[Team (Player Stats)]' value='[Player Stats].[Team]' />
+          <map key='[Team Name]' value='[Player Stats].[Team Name]' />
+          <map key='[TeamURL]' value='[Player Stats].[TeamURL]' />
+          <map key='[Team]' value='[Player Positions].[Team]' />
+          <map key='[Tries]' value='[Player Stats].[Tries]' />
+          <map key='[Try Assists]' value='[Player Stats].[Try Assists]' />
+          <map key='[Try Involvement]' value='[Player Stats].[Try Involvement]' />
+          <map key='[Try Saves]' value='[Player Stats].[Try Saves]' />
+          <map key='[Twenty Forty Kicks]' value='[Player Stats].[Twenty Forty Kicks]' />
+          <map key='[Win/Lose]' value='[Player Stats].[Win/Lose]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Player Positions]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K1657:no:A1:K1657:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:BF1956:no:A1:BF1956:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Field1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Field1]</local-name>
+            <parent-name>[Player Positions]</parent-name>
+            <remote-alias>Field1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Positions_3F39A4279CBF40AA9322BF2255A3AF50]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Game ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Game ID]</local-name>
+            <parent-name>[Player Positions]</parent-name>
+            <remote-alias>Game ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Positions_3F39A4279CBF40AA9322BF2255A3AF50]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[Player Positions]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Positions_3F39A4279CBF40AA9322BF2255A3AF50]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Player Number]</local-name>
+            <parent-name>[Player Positions]</parent-name>
+            <remote-alias>Player Number</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Positions_3F39A4279CBF40AA9322BF2255A3AF50]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shirt Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Shirt Number]</local-name>
+            <parent-name>[Player Positions]</parent-name>
+            <remote-alias>Shirt Number</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Positions_3F39A4279CBF40AA9322BF2255A3AF50]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Position</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Position]</local-name>
+            <parent-name>[Player Positions]</parent-name>
+            <remote-alias>Position</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Positions_3F39A4279CBF40AA9322BF2255A3AF50]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Position Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Position Number]</local-name>
+            <parent-name>[Player Positions]</parent-name>
+            <remote-alias>Position Number</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Positions_3F39A4279CBF40AA9322BF2255A3AF50]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player Image</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Player Image]</local-name>
+            <parent-name>[Player Positions]</parent-name>
+            <remote-alias>Player Image</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Positions_3F39A4279CBF40AA9322BF2255A3AF50]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Player Name]</local-name>
+            <parent-name>[Player Positions]</parent-name>
+            <remote-alias>Player Name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Positions_3F39A4279CBF40AA9322BF2255A3AF50]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comp</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Comp]</local-name>
+            <parent-name>[Player Positions]</parent-name>
+            <remote-alias>Comp</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Positions_3F39A4279CBF40AA9322BF2255A3AF50]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Game Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Game Date]</local-name>
+            <parent-name>[Player Positions]</parent-name>
+            <remote-alias>Game Date</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Positions_3F39A4279CBF40AA9322BF2255A3AF50]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Game ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Game ID (Player Stats)]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Game ID</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player Numbers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Player Numbers]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Player Numbers</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Team (Player Stats)]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Team Name]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Team Name</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tries]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Tries</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tackles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tackles]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Tackles</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Errors</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Errors]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Errors</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Penalties</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Penalties]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Penalties</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score (FT)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Score (FT)]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Score (FT)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Game Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Game Date (Player Stats)]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Game Date</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Round Number</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Round Number]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Round Number</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Home</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Home]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Home</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Away</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Away]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Away</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>All Goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[All Goals]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>All Goals</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>All Goals Missed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[All Goals Missed]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>All Goals Missed</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>All Run Metres</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[All Run Metres]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>All Run Metres</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dummy Half Runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dummy Half Runs]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Dummy Half Runs</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Field Goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Field Goals]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Field Goals</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Field Goals Attempts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Field Goals Attempts]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Field Goals Attempts</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bomb Kicks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bomb Kicks]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Bomb Kicks</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Forty Twenty Kicks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Forty Twenty Kicks]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Forty Twenty Kicks</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Points]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Points</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Linebreak Assists</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Linebreak Assists]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Linebreak Assists</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Linebreaks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Linebreaks]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Linebreaks</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offloads</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Offloads]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Offloads</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offload To Hand</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Offload To Hand]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Offload To Hand</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Passes]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Passes</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Post Contact Metres</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Post Contact Metres]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Post Contact Metres</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tackle Breaks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tackle Breaks]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Tackle Breaks</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Try Involvement</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Try Involvement]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Try Involvement</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Charge Downs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Charge Downs]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Charge Downs</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kicks Defused</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Kicks Defused]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Kicks Defused</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Intercepts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Intercepts]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Intercepts</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>One On One Steal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[One On One Steal]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>One On One Steal</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Try Saves</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Try Saves]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Try Saves</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Twenty Forty Kicks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Twenty Forty Kicks]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Twenty Forty Kicks</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Grubber Kick</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Grubber Kick]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Grubber Kick</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kicks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Kicks]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Kicks</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kick Try Assist</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Kick Try Assist]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Kick Try Assist</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kick Dead</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Kick Dead]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Kick Dead</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ruck Infringements</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ruck Infringements]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Ruck Infringements</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>One On One Lost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[One On One Lost]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>One On One Lost</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>On Report</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[On Report]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>On Report</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sent Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sent Off]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Sent Off</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sin Bins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sin Bins]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Sin Bins</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Full Time H</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Full Time H]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Full Time H</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Full Time A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Full Time A]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Full Time A</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Half T H</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Half T H]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Half T H</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Half Time A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Half Time A]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Half Time A</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comp</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Comp (Player Stats)]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Comp</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Referee</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Referee]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Referee</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes Per Run</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Passes Per Run]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Passes Per Run</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Try Assists</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Try Assists]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Try Assists</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Missed Tackles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Missed Tackles]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Missed Tackles</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TeamURL</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TeamURL]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>TeamURL</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Win/Lose</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Win/Lose]</local-name>
+            <parent-name>[Player Stats]</parent-name>
+            <remote-alias>Win/Lose</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player Stats_B0F2AC61779942399FEF471F1FFBB543]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Is Selected Player' datatype='boolean' name='[Calculation_313563188092039169]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Name] = [Parameters].[Parameter 1]' />
+      </column>
+      <column caption='Is Selected Game' datatype='boolean' name='[Calculation_313563188092112898]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Game ID] = [Parameters].[Parameter 2]' />
+      </column>
+      <column caption='Color: Scatter' datatype='string' name='[Calculation_313563188092264451]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_313563188092112898] AND [Calculation_313563188092039169] THEN  &quot;Both&quot;&#13;&#10;ELSEIF  [Calculation_313563188092039169] THEN &quot;Player&quot;&#13;&#10;ELSEIF  [Calculation_313563188092112898] THEN &quot;Game&quot;&#13;&#10;ELSE &quot;Neither&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Dummy' datatype='string' name='[Calculation_313563188099809284]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Dummy&quot;' />
+      </column>
+      <column datatype='integer' name='[Game ID (Player Stats)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Game ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Player Image]' role='dimension' semantic-role='[URL]' type='nominal' />
+      <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Player Number]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Position Number]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Shirt Number]' role='dimension' type='ordinal' />
+      <column caption='Team URL' datatype='string' name='[TeamURL]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Player Positions' datatype='table' name='[__tableau_internal_object_id__].[Player Positions_3F39A4279CBF40AA9322BF2255A3AF50]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Player Stats' datatype='table' name='[__tableau_internal_object_id__].[Player Stats_B0F2AC61779942399FEF471F1FFBB543]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_313563188092112898]' derivation='None' name='[none:Calculation_313563188092112898:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_313563188092264451]' derivation='None' name='[none:Calculation_313563188092264451:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Game ID,Player Name)' hidden='true' name='[Action (Game ID,Player Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Game ID]' />
+          <groupfilter function='level-members' level='[Player Name]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Is Selected Player,Color: Scatter,Game ID,Player Name)' hidden='true' name='[Action (Is Selected Player,Color: Scatter,Game ID,Player Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_313563188092039169]' />
+          <groupfilter function='level-members' level='[Calculation_313563188092264451]' />
+          <groupfilter function='level-members' level='[Game ID]' />
+          <groupfilter function='level-members' level='[Player Name]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_313563188092112898:nk]' type='palette'>
+            <map to='#1170aa'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#a3cce9'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_313563188092264451:nk]' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;Both&quot;</bucket>
+            </map>
+            <map to='#57606c'>
+              <bucket>&quot;Game&quot;</bucket>
+            </map>
+            <map to='#a3acb9'>
+              <bucket>&quot;Neither&quot;</bucket>
+            </map>
+            <map to='#a3cce9'>
+              <bucket>&quot;Player&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='pSelectedPlayer' datatype='string' datatype-customized='true' name='[Parameter 1]' param-domain-type='any' role='measure' type='nominal' value='&quot;Brandon Smith&quot;'>
+          <calculation class='tableau' formula='&quot;Brandon Smith&quot;' />
+        </column>
+        <column caption='pSelectedGameID' datatype='integer' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='21'>
+          <calculation class='tableau' formula='21' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Player Positions' id='Player Positions_3F39A4279CBF40AA9322BF2255A3AF50'>
+            <properties context=''>
+              <relation connection='cloudfile:googledrive-excel-direct.1wf5xuk0gubfnp1bxyn580cnieza' name='Player Positions' table='[&apos;Player Positions$&apos;]' type='table'>
+                <columns gridOrigin='A1:K1657:no:A1:K1657:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Field1' ordinal='0' />
+                  <column datatype='integer' name='Game ID' ordinal='1' />
+                  <column datatype='string' name='Team' ordinal='2' />
+                  <column datatype='integer' name='Player Number' ordinal='3' />
+                  <column datatype='integer' name='Shirt Number' ordinal='4' />
+                  <column datatype='string' name='Position' ordinal='5' />
+                  <column datatype='integer' name='Position Number' ordinal='6' />
+                  <column datatype='string' name='Player Image' ordinal='7' />
+                  <column datatype='string' name='Player Name' ordinal='8' />
+                  <column datatype='string' name='Comp' ordinal='9' />
+                  <column datatype='datetime' name='Game Date' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Player Stats' id='Player Stats_B0F2AC61779942399FEF471F1FFBB543'>
+            <properties context=''>
+              <relation connection='cloudfile:googledrive-excel-direct.1wf5xuk0gubfnp1bxyn580cnieza' name='Player Stats' table='[&apos;Player Stats$&apos;]' type='table'>
+                <columns gridOrigin='A1:BF1956:no:A1:BF1956:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Game ID' ordinal='0' />
+                  <column datatype='string' name='Name' ordinal='1' />
+                  <column datatype='integer' name='Player Numbers' ordinal='2' />
+                  <column datatype='string' name='Team' ordinal='3' />
+                  <column datatype='string' name='Team Name' ordinal='4' />
+                  <column datatype='integer' name='Tries' ordinal='5' />
+                  <column datatype='integer' name='Tackles' ordinal='6' />
+                  <column datatype='integer' name='Errors' ordinal='7' />
+                  <column datatype='integer' name='Penalties' ordinal='8' />
+                  <column datatype='string' name='Score (FT)' ordinal='9' />
+                  <column datatype='datetime' name='Game Date' ordinal='10' />
+                  <column datatype='string' name='Round Number' ordinal='11' />
+                  <column datatype='string' name='Home' ordinal='12' />
+                  <column datatype='string' name='Away' ordinal='13' />
+                  <column datatype='integer' name='All Goals' ordinal='14' />
+                  <column datatype='integer' name='All Goals Missed' ordinal='15' />
+                  <column datatype='integer' name='All Run Metres' ordinal='16' />
+                  <column datatype='integer' name='Dummy Half Runs' ordinal='17' />
+                  <column datatype='integer' name='Field Goals' ordinal='18' />
+                  <column datatype='integer' name='Field Goals Attempts' ordinal='19' />
+                  <column datatype='integer' name='Bomb Kicks' ordinal='20' />
+                  <column datatype='integer' name='Forty Twenty Kicks' ordinal='21' />
+                  <column datatype='integer' name='Points' ordinal='22' />
+                  <column datatype='integer' name='Linebreak Assists' ordinal='23' />
+                  <column datatype='integer' name='Linebreaks' ordinal='24' />
+                  <column datatype='integer' name='Offloads' ordinal='25' />
+                  <column datatype='integer' name='Offload To Hand' ordinal='26' />
+                  <column datatype='integer' name='Passes' ordinal='27' />
+                  <column datatype='integer' name='Post Contact Metres' ordinal='28' />
+                  <column datatype='integer' name='Tackle Breaks' ordinal='29' />
+                  <column datatype='integer' name='Try Involvement' ordinal='30' />
+                  <column datatype='integer' name='Charge Downs' ordinal='31' />
+                  <column datatype='integer' name='Kicks Defused' ordinal='32' />
+                  <column datatype='integer' name='Intercepts' ordinal='33' />
+                  <column datatype='integer' name='One On One Steal' ordinal='34' />
+                  <column datatype='integer' name='Try Saves' ordinal='35' />
+                  <column datatype='integer' name='Twenty Forty Kicks' ordinal='36' />
+                  <column datatype='integer' name='Grubber Kick' ordinal='37' />
+                  <column datatype='integer' name='Kicks' ordinal='38' />
+                  <column datatype='integer' name='Kick Try Assist' ordinal='39' />
+                  <column datatype='integer' name='Kick Dead' ordinal='40' />
+                  <column datatype='integer' name='Ruck Infringements' ordinal='41' />
+                  <column datatype='integer' name='One On One Lost' ordinal='42' />
+                  <column datatype='integer' name='On Report' ordinal='43' />
+                  <column datatype='integer' name='Sent Off' ordinal='44' />
+                  <column datatype='integer' name='Sin Bins' ordinal='45' />
+                  <column datatype='integer' name='Full Time H' ordinal='46' />
+                  <column datatype='integer' name='Full Time A' ordinal='47' />
+                  <column datatype='integer' name='Half T H' ordinal='48' />
+                  <column datatype='integer' name='Half Time A' ordinal='49' />
+                  <column datatype='string' name='Comp' ordinal='50' />
+                  <column datatype='string' name='Date' ordinal='51' />
+                  <column datatype='string' name='Referee' ordinal='52' />
+                  <column datatype='integer' name='Passes Per Run' ordinal='53' />
+                  <column datatype='integer' name='Try Assists' ordinal='54' />
+                  <column datatype='integer' name='Missed Tackles' ordinal='55' />
+                  <column datatype='string' name='TeamURL' ordinal='56' />
+                  <column datatype='string' name='Win/Lose' ordinal='57' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[Game ID]' />
+                <expression op='[Game ID (Player Stats)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Player Name]' />
+                <expression op='[Name]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='Player Positions_3F39A4279CBF40AA9322BF2255A3AF50' />
+            <second-end-point object-id='Player Stats_B0F2AC61779942399FEF471F1FFBB543' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Deselect Marks' name='[Action3_43938071A93F48F39247BB38EF81C523]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Scatter' />
+      <command command='tsc:brush'>
+        <param name='exclude' value='Bar' />
+        <param name='field-captions' value='Dummy' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <edit-parameter-action caption='Select Player' name='[Action1_DF7E1FF94A15414491C71BA9E3FACECE]'>
+      <activation type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Scatter' />
+      <agg-type type='attr' />
+      <_.fcp.ParameterActionClearSelection.true...clear-option type='assign-fixed-value' value='s:LROOT:' />
+      <params>
+        <param name='source-field' value='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Player Name:nk]' />
+        <param name='target-parameter' value='[Parameters].[Parameter 1]' />
+      </params>
+    </edit-parameter-action>
+    <edit-parameter-action caption='Select Game' name='[Action2_AB7E914ABA2745D280822FB6B3C32324]'>
+      <activation type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Scatter' />
+      <agg-type type='attr' />
+      <_.fcp.ParameterActionClearSelection.true...clear-option type='assign-fixed-value' value='i:0' />
+      <params>
+        <param name='source-field' value='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Game ID:ok]' />
+        <param name='target-parameter' value='[Parameters].[Parameter 2]' />
+      </params>
+    </edit-parameter-action>
+    <edit-parameter-action caption='Show Player Detail' name='[Action4_ADB6BD5CEE6445F1BFDF4BDA7D6CD8DD]'>
+      <activation type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Scatter' />
+      <agg-type type='attr' />
+      <_.fcp.ParameterActionClearSelection.true...clear-option type='assign-fixed-value' value='b:false' />
+      <params>
+        <param name='source-field' value='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Calculation_313563188092039169:nk]' />
+        <param name='target-parameter' value='[Parameters].[Parameter 3]' />
+      </params>
+    </edit-parameter-action>
+  </actions>
+  <worksheets>
+    <worksheet name='Bar'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;</run>
+            <run bold='true' fontalignment='1' fontsize='14'>[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Player Name:nk]</run>
+            <run bold='true' fontalignment='1' fontsize='14'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Player Positions+ (Copy of RLWC 2021)' name='federated.03xtlm50w1pjcm15jw5bb0uxv717' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='pSelectedPlayer' datatype='string' datatype-customized='true' name='[Parameter 1]' param-domain-type='any' role='measure' type='nominal' value='&quot;Brandon Smith&quot;'>
+              <calculation class='tableau' formula='&quot;Brandon Smith&quot;' />
+            </column>
+            <column caption='pSelectedGameID' datatype='integer' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='21'>
+              <calculation class='tableau' formula='21' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.03xtlm50w1pjcm15jw5bb0uxv717'>
+            <column datatype='integer' name='[All Run Metres]' role='measure' type='quantitative' />
+            <column caption='Is Selected Player' datatype='boolean' name='[Calculation_313563188092039169]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Name] = [Parameters].[Parameter 1]' />
+            </column>
+            <column caption='Is Selected Game' datatype='boolean' name='[Calculation_313563188092112898]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Game ID] = [Parameters].[Parameter 2]' />
+            </column>
+            <column datatype='integer' name='[Game ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Passes]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Image]' role='dimension' semantic-role='[URL]' type='nominal' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_313563188092039169]' derivation='None' name='[none:Calculation_313563188092039169:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_313563188092112898]' derivation='None' name='[none:Calculation_313563188092112898:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Game ID]' derivation='None' name='[none:Game ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Player Image]' derivation='None' name='[none:Player Image:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[All Run Metres]' derivation='Sum' name='[sum:All Run Metres:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Passes]' derivation='Sum' name='[sum:Passes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Calculation_313563188092039169:nk]'>
+            <groupfilter function='member' level='[none:Calculation_313563188092039169:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Player Image:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Player Image:nk]' />
+              <groupfilter function='member' level='[none:Player Image:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Player Image:nk]</column>
+            <column>[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]</column>
+            <column>[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Calculation_313563188092039169:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]' scope='cols' value='true' />
+            <format attr='display' class='0' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:Passes:qk]' scope='cols' value='true' />
+            <encoding attr='space' class='0' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]' field-type='quantitative' major-origin='0' major-show='false' major-spacing='100' minor-origin='0' minor-show='false' minor-spacing='10' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:Passes:qk]' field-type='quantitative' major-origin='0' major-show='false' major-spacing='100' minor-origin='0' minor-show='false' minor-spacing='10' scope='cols' type='space' />
+            <encoding attr='space' class='1' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:Passes:qk]' field-type='quantitative' fold='true' major-origin='0' major-show='false' major-spacing='100' minor-origin='0' minor-show='false' minor-spacing='10' scope='cols' synchronized='true' type='space' />
+            <encoding attr='space' class='1' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]' field-type='quantitative' fold='true' major-origin='0' major-show='false' major-spacing='100' minor-origin='0' minor-show='false' minor-spacing='10' scope='cols' synchronized='true' type='space' />
+            <format attr='title' class='0' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:Passes:qk]' scope='cols' value='' />
+            <format attr='height' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]' value='24' />
+            <format attr='height' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:Passes:qk]' value='24' />
+            <format attr='border-color' value='#b0b0b0' />
+            <format attr='border-width' value='1' />
+            <format attr='tick-color' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Game ID:ok]' value='54' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]' value='normal' />
+            <format attr='font-size' value='8' />
+            <format attr='font-weight' value='normal' />
+            <format attr='font-family' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]' value='Tableau Light' />
+            <format attr='font-family' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:Passes:qk]' value='Tableau Light' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Calculation_313563188092112898:nk]' />
+              <lod column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Player Name:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='pane'>
+                <format attr='aspect' value='1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Calculation_313563188092112898:nk]' />
+              <lod column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Player Name:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:Passes:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Calculation_313563188092112898:nk]' />
+              <lod column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Player Name:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Calculation_313563188092112898:nk]' />
+              <lod column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Player Name:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='pane'>
+                <format attr='aspect' value='1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:Passes:qk]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Calculation_313563188092112898:nk]' />
+              <lod column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Player Name:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='pane'>
+                <format attr='aspect' value='1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Player Image:nk] / [federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Game ID:ok])</rows>
+        <cols>([federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk] + ([federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk] + ([federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:Passes:qk] + [federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:Passes:qk])))</cols>
+      </table>
+      <simple-id uuid='{B0F3DA90-7565-4159-818A-1BC2F181F73E}' />
+    </worksheet>
+    <worksheet name='Scatter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Player Positions+ (Copy of RLWC 2021)' name='federated.03xtlm50w1pjcm15jw5bb0uxv717' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='pSelectedPlayer' datatype='string' datatype-customized='true' name='[Parameter 1]' param-domain-type='any' role='measure' type='nominal' value='&quot;Brandon Smith&quot;'>
+              <calculation class='tableau' formula='&quot;Brandon Smith&quot;' />
+            </column>
+            <column caption='pSelectedGameID' datatype='integer' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='21'>
+              <calculation class='tableau' formula='21' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.03xtlm50w1pjcm15jw5bb0uxv717'>
+            <column datatype='integer' name='[All Run Metres]' role='measure' type='quantitative' />
+            <column caption='Is Selected Player' datatype='boolean' name='[Calculation_313563188092039169]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Name] = [Parameters].[Parameter 1]' />
+            </column>
+            <column caption='Is Selected Game' datatype='boolean' name='[Calculation_313563188092112898]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Game ID] = [Parameters].[Parameter 2]' />
+            </column>
+            <column caption='Color: Scatter' datatype='string' name='[Calculation_313563188092264451]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_313563188092112898] AND [Calculation_313563188092039169] THEN  &quot;Both&quot;&#13;&#10;ELSEIF  [Calculation_313563188092039169] THEN &quot;Player&quot;&#13;&#10;ELSEIF  [Calculation_313563188092112898] THEN &quot;Game&quot;&#13;&#10;ELSE &quot;Neither&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Dummy' datatype='string' name='[Calculation_313563188099809284]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Dummy&quot;' />
+            </column>
+            <column datatype='integer' name='[Game ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Passes]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_313563188092039169]' derivation='None' name='[none:Calculation_313563188092039169:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_313563188092264451]' derivation='None' name='[none:Calculation_313563188092264451:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_313563188099809284]' derivation='None' name='[none:Calculation_313563188099809284:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Game ID]' derivation='None' name='[none:Game ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[All Run Metres]' derivation='Sum' name='[sum:All Run Metres:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Passes]' derivation='Sum' name='[sum:Passes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Player Name:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Player Name:nk]' />
+              <groupfilter function='member' level='[none:Player Name:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Player Name:nk]</column>
+            <column>[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]' field-type='quantitative' major-origin='0' major-spacing='50' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:Passes:qk]' field-type='quantitative' major-origin='0' major-spacing='20' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Calculation_313563188092039169:nk]' field-type='nominal' max-size='1' min-size='0.479116' type='catsize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Calculation_313563188092264451:nk]' />
+              <size column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Calculation_313563188092039169:nk]' />
+              <lod column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Player Name:nk]' />
+              <lod column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Game ID:ok]' />
+              <lod column='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Calculation_313563188099809284:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Game ID: </run>
+                <run bold='true'><![CDATA[<[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Game ID:ok]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'><![CDATA[<[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Player Name:nk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+                <format attr='size' value='0.96895623207092285' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:Passes:qk]</rows>
+        <cols>[federated.03xtlm50w1pjcm15jw5bb0uxv717].[sum:All Run Metres:qk]</cols>
+      </table>
+      <simple-id uuid='{A2F6F206-4A0E-45CF-9B73-D02E681A4B4F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='800' minheight='800' minwidth='800' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='24000' hidden-by-user='true' id='5' name='Bar' w='98000' x='1000' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='74000' id='6' name='Scatter' show-title='false' w='98000' x='1000' y='25000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='7' param='vert' type-v2='layout-flow' w='98000' x='1000' y='1000'>
+                <zone fixed-size='184' h='24000' id='5' is-fixed='true' name='Bar' w='98000' x='1000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='74000' id='6' is-fixed='true' name='Scatter' show-title='false' w='98000' x='1000' y='25000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BBD871FA-7620-4E20-8C64-451B91963BE8}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Scatter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='type_in' param='[Parameters].[Parameter 2]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Calculation_313563188092039169:nk]' type='size' />
+            <card mode='compact' param='[Parameters].[Parameter 3]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{586BF09F-2D32-48F8-A289-4A80ED61E01D}' />
+    </window>
+    <window class='worksheet' name='Bar'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.03xtlm50w1pjcm15jw5bb0uxv717].[none:Calculation_313563188092112898:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{3BD5F0B3-E09D-4BF4-A4EC-15268C748547}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Bar'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Scatter'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B17D1F66-4421-4F4B-A5E4-8BD5689E5304}' />
+    </window>
+  </windows>
+  <_.fcp.DatagraphCoreV1.true...datagraph>
+    <graph>
+      <properties>
+        <default-execution-subgraph-guid value='14eac56a-a9c4-4bca-9278-8effb9160ae5' />
+      </properties>
+      <node-execution-subgraphs>
+        <pair execution-subgraph-guid='14eac56a-a9c4-4bca-9278-8effb9160ae5' node-guid='3737dd8b-5b96-4720-b204-3b0bcd79d7fa' />
+        <pair execution-subgraph-guid='14eac56a-a9c4-4bca-9278-8effb9160ae5' node-guid='a057f381-b89a-438f-bef5-6e7210d7169d' />
+      </node-execution-subgraphs>
+      <nodes>
+        <_.fcp.DatagraphNodeDashboardZoneVisibilityV1.true...dashboard-zone-visibility-node dashboard-identifier='{BBD871FA-7620-4E20-8C64-451B91963BE8}' node-guid='3737dd8b-5b96-4720-b204-3b0bcd79d7fa' visibility-input-guid='a5e4ca9d-e925-4618-bdae-29974e3bcc39' zone-id='5' />
+        <_.fcp.DatagraphNodeSingleValueFieldV1.true...single-value-field-node fieldname='[Parameters].[Parameter 3]' fieldname-input-guid='999f3553-1da9-4322-965a-c699a603f647' node-guid='a057f381-b89a-438f-bef5-6e7210d7169d' value-output-guid='e976601b-fe11-47bb-83a9-8744316480e6' />
+      </nodes>
+      <edges>
+        <edge from='e976601b-fe11-47bb-83a9-8744316480e6' to='a5e4ca9d-e925-4618-bdae-29974e3bcc39' />
+      </edges>
+      <pin-values />
+    </graph>
+  </_.fcp.DatagraphCoreV1.true...datagraph>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO29S3AbWbrn98vEGwRIECQIPkWKpPgS9SypHqpSlaqru6t7bvftOzPtlR3h
+      CHsxi1mMJxwxC686whHXG4cnxotx3JU3E3HHjranfbu6ut6lenRJ1XpTEim+3wQJgCBAvIEE
+      0gswUwAJkCAFPiTkbyOIyPwyAZzv5Dnn+5/vE2RZltHQqFLE474BDY3jRHMAjapGcwCNqkZz
+      AI2qRnMAjapGcwCNqkZzAI2qRnMAjapGcwCNqkZzAI2qRnMAjapGcwCNqkZzAI2qRnMAjapG
+      cwCNqkZzAI2qRnMAjapGcwCNqkZzAI2qRnMAjapGcwCNqkZzAI2qRnMAjapGcwCNqkZzAI2q
+      RnMAjapGcwCNqkZzAI2qRnMAjapGcwCNqkZzAI2qRnMAjapGcwCNqkZzAI2qRnMAjapGcwCN
+      qkZzAI2qRnMAjapGcwCNqkZzAI2qRnMAjapGcwCNqkZzAI2qRnMAjapGcwCNqkZzAI2qRnMA
+      japGcwCNqkZzAI2qRnMAjaqm4g6QyWT2PEaSpEpf9lBsHpbdarZ5WHYPavNYngDlOImGxlFw
+      LA6g0+mO47IaGjvQ5gAaVY02BNKoarQhkEZVoz/uGzgKprxh/tfPRwknJP67az18MNh83Lek
+      cUI4FgfIZDLo9Udz6Xg6w2/+4zd4QnEAPhv18OW//YDz7fVHcn2Nk80rPwR6shxUGz9AJivz
+      1fjakV1f42Tzyq8CnW60YdIXfswBd+0x3c3e+ANB/IHgcd9G1fBKrAIlU2lkWS76XqPNxD/8
+      N2/Q5rBgN+v5H382yIdnWyp6/UqRTKX59OYdPr15h2Qqfdy3UxUcyxygEkOgZCqNQa8nEAzx
+      6c07NLvq+eD6laLH/u2Fdv72QvsLX/OwMej1tDY3qq81Dp99f8ubm5vU1tay4VtFZ3VgJEUw
+      lqHZdbiTSknKPTX0eh3+QJBPb96htbmRcwOnD/W6R4koCrx/7dJx30ZVsS8HyKYTPHo6xvW3
+      LrG2HoX13FjVAKRc9RjLtLPfVSBJyvCHT74D4O9+cb3gvUang9/+6gaiULY5DQ2VfTmAaDDj
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
